@@ -199,7 +199,7 @@ const Peer = window.Peer;
       myId = localId.textContent;
       if(msg.data == `${myId}さんが入室できませんでした`) {
         room.close();
-        window.location.href = "https://textcall.online";
+        window.location.href = "https://yukihara9294.github.io/textcall/";
         alert('ルーム人数の上限に達しているので参加できません');
       }
     });
@@ -264,7 +264,7 @@ const Peer = window.Peer;
     homeTrigger.addEventListener('click', () => {
       var result = confirm('ホームに戻りますか？');
       if(result) {
-        window.location.href = "https://textcall.online";
+        window.location.href = "https://yukihara9294.github.io/textcall/";
       } else {
         return 0;
       }
