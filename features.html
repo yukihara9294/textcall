@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="ja">
+    <head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-169220071-1"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-169220071-1');
+        </script>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+
+        <!-- OGP設定 -->
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content="https://yukihara9294.github.io/textcall/features/" />
+        <meta property="og:title" content="テキストコール | 特徴" />
+        <meta property="og:description" content="声を文字に変換し、自動で会議の議事録を作成したり、耳が聞こえにくい方でも使える1対1のビデオチャットです。相手の顔をみて、声で伝えて、耳と目で聴くことができるサービスです。" />
+        <meta property="og:site_name" content="TextCall" />     
+        <meta property="og:image" content="https://yukihara9294.github.io/textcall/png/ogp.png" />
+
+        <!-- OGP設定：Facebook -->
+        <meta property="fb:app_id" content="717657779069955">
+
+        <!-- OGP設定：Twitter -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:creator" content="@yukihara9294">
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <title>TextCall</title>
+
+        <!-- Bootstrap core CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <!-- Custom styles for this template -->
+        <link href="css/index.css" rel="stylesheet">
+    </head>
+    
+    <body class="text-center">
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+        <header class="masthead mb-auto">
+            <div class="inner">
+                <a href="https://yukihara9294.github.io/textcall/"><img src="png/logo.png" class="logo"/>
+                <nav id="tabcontrol" class="nav nav-masthead justify-content-center">
+                    <a class="nav-link" href="/">Home</ul>
+                    <a class="nav-link active" href="https://yukihara9294.github.io/textcall/features">Features</a>
+                    <a class="nav-link" href="https://yukihara9294.github.io/textcall/privacypolicy">Privacy Policy</a>
+                    <a class="nav-link" href="https://form.run/@yukihara--1592639252">Contact</a>
+                </nav>
+            </div>
+        </header>
+
+        <!-- <div class="tab-content"> -->
+        <div class="tab-content">
+            <h3 class="cover-heading2">顔をみて、声で伝えて、耳と目で聴く。</h3>
+            <img src="fig4.png" class="fig"/>
+            <p class="lead2">◎URLの共有で1対1のテレビ通話<br>◎音声認識で字幕機能搭載<br>◎会話記録は保存可能<br>◎登録/ログイン不要</p>
+            <p>
+                <form name="buttonForm" onsubmit="checkText()" class="createButton">
+                    <input type="submit" style="width:50%" value="Create a Room" class="btn btn-lg btn-secondary">
+                </form>
+            </p>
+            <a href="https://twitter.com/share" class="twitter-share-button"　data-url="https://yukihara9294.github.io/textcall/" data-text="声を文字変換するビデオチャットでいろんな人と会話しよう！対応環境：PC版Google Chrome・（イヤホン）" data-hashtags="TextCall,バリアフリーなビデオチャット,自動で議事録作成" data-count="none" data-lang="ja">ツイート</a>
+            <script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
+        </div>
+
+
+        <footer class="mastfoot mt-auto">
+            <div class="inner2">
+                <p>＊音声認識には<a href="https://developer.mozilla.org/ja/docs/Web/API/Web_Speech_API">Web Speech API</a>を利用しています</p>
+            </div>
+        </footer>
+
+    </div>
+
+    <script type="text/javascript">
+    //ページ遷移
+    function checkText() {
+            document.buttonForm.action = "https://yukihara9294.github.io/textcall/calling";
+    }
+    //端末判定
+    var userAgent = window.navigator.userAgent.toLowerCase();
+    if(navigator.userAgent.match(/(iPhone|iPad|iPod|Android)/)){
+        redirect();
+    //ブラウザ判定
+    } else if (userAgent.indexOf('chrome') == -1) {
+        redirect();
+    }
+    function redirect(){
+        alert("本サービスはPC版Google Chromeのみ対応しています");
+    }
+    </script>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="../../assets/js/vendor/popper.min.js"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    </body>
+</html>
