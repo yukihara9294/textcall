@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-169220071-1"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-169220071-1');
+        </script>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+
+        <!-- OGP設定 -->
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content="https://textcall.online/calling.html" />
+        <meta property="og:title" content="テキストコール | チャットルーム" />
+        <meta property="og:description" content="ビデオチャットの招待URLが届いています。PC版Google Chromeで開いて声を文字に変換するビデオチャットに参加しよう！" />
+        <meta property="og:site_name" content="TextCall" />
+        <meta property="og:image" content="https://textcall.online/ogp2.png" />
+
+        <!-- OGP設定：Facebook -->
+        <meta property="fb:app_id" content="717657779069955">
+
+        <!-- OGP設定：Twitter -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:creator" content="@yukihara9294">
+
+        <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+        <meta http-equiv="Pragma" content="no-cache" />
+        <meta http-equiv="cache-control" content="no-cache" />
+        <meta http-equiv="expires" content="0" />
+        <title>TextCall</title>
+        <link rel="stylesheet" href="../shared/style.css">
+        <link href="calling.css" rel="stylesheet" type="text/css">
+         <!-- Bootstrap core CSS -->
+         <meta name="viewport" content="width=device-width">
+         <!-- <link href="bootstrap.min.css" rel="stylesheet"> -->
+        <title>TextCall</title>
+        
+    </head>
+    <body>
+        <div id="container">
+            <div id="all-container" class="video_field">
+                <div id ="blackbox"  class="video_text">
+                    <div id="js-videos-container" class="video_area1">
+                        <video id="js-local-video" class="video" autoplay muted="true"></video>
+                        <p id="result_text2" class="text_area text_area1"><span>参加ボタンで音声認識が開始します。Enterで文章を送信BackSpaceで削除</span></p>
+                        <p id="result_text4" class="text_area text_area4"></p>
+                    </div>
+                </div>
+                <div id ="blackbox" class="video_text">
+                    <div id="js-peer1-container" class="video_area2">
+                        <p id="result_text3" class="text_area">相手の音声を表示</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="messages-controller" class="controller-container">
+            <p>＊音声認識には<a href="https://developer.mozilla.org/ja/docs/Web/API/Web_Speech_API">Web Speech API</a>を利用しています<br>あなたのルームIDは[ <span id="js-local-id">...</span> ]です</p>  
+            <p class="messages" id="js-messages"></p>
+            <a id='DL_link'></a>
+        </div>
+
+        <footer>
+            <form name="form1">
+                <span id="status" class="status"></span>
+                <textarea name="textarea1" id="result_text" class="voicetext" cols="1" rows="1"></textarea>
+                <button type="button" id="js-send-trigger" class="allButton footterButton">送信</button>
+                <button type="button" id="js-save-trigger" class="allButton footterButton">会話記録を保存</button>
+                <button type="button" id="js-leave-trigger" class="allButton leaveButton">退出</button>
+                <button type="button" id="js-copy-trigger" class="allButton copyButton">招待URLをコピー</button>
+                <button type="button" id="js-join-trigger" class="allButton joinButton">参加</button>
+                <button type="button" id="js-home-trigger" class="allButton homeButton">ホーム</button>
+            </form>
+            
+        </footer>
+
+        <script type="text/javascript" src="https://cdn.webrtc.ecl.ntt.com/skyway-latest.js"></script>
+        <script type="text/javascript" src="../shared/key.js"></script>
+        <script type="text/javascript" src="./script.js"></script>
+        <script src="../../dist/js/bootstrap.min.js"></script>
+    </body>
+</html>

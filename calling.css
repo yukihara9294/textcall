@@ -1,0 +1,261 @@
+body {
+	font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Meiryo", "sans-serif";
+    background-color: #292929;
+    color: rgb(223, 223, 223);
+}
+
+
+/* 親要素 */
+.container {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.video_field {
+    text-align: center;
+    /* width: 99vw; */
+    background-color: black;
+    /* height: 100%; */
+    justify-content: center;
+    align-items: center;
+}
+
+.video_text {
+    position: relative;
+    width: 48wv;
+    height: 60vh;
+    display: inline-block;
+    position: relative;
+    padding: 0;
+    white-space: normal;
+    margin: auto;
+    justify-content: center;
+  align-items: center;
+}
+
+.video_area1 {
+    top: 5%;
+    left: 0%;
+    height: 50;
+}
+
+.video_area2 {
+    top: 5%;
+    left: 0%;
+    height: 50vw;
+}
+
+
+.video {
+    filter: brightness(75%);
+    width: 48vw;
+    z-index: -1;
+}
+
+.text_area {
+    position   : absolute;                   /* 親要素からの絶対位置 */
+    box-sizing : border-box;
+    width      : 100%;                       /* 親要素の幅に合わせる */
+    color      : rgb(254, 254, 254);       /* 文字色（透明度） */
+    top        : 25vh;                        /* 親要素からの上位置 */
+    left       : 0;                          /* 親要素からの左位置 */
+    text-align : center;                     
+    transform  : translateY(-50%);           /* 文字BOXの位置ずらし */
+    padding    : 10px 0;                     
+    font-size  : 55pt;                       /* 文字サイズ */
+    font-weight: bold;                       /* 太字 */
+    line-height: 1.5em;                      /* 1行の高さ */
+    z-index    : 12;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 5;
+    overflow: hidden;
+  }
+
+  .text_area4 {
+    color      : rgba(112, 112, 112, 0.434);       /* 文字色（透明度） */
+  }
+
+  .controller-container {
+      border-radius: 0em;   /* 角丸 */
+      border: 1px solid #000 ;
+      padding: 0.5em;
+      margin: 0.05em;
+      background-color: #f3f3f3;
+      color: rgb(41, 41, 41);
+      overflow-y: scroll;
+      white-space: pre-wrap;
+      word-wrap: break-word;
+      width:100%;
+      height:18vh;
+      font-size: 24px;
+  }
+
+  .messages {
+      height: 0;
+      width: 100%;
+  }
+
+  .status {
+    top: 1vh;
+    position: relative;
+    font-weight: normal;
+    font-size: 13pt;
+
+    display: inline-block;
+    padding: 0em 0.5em;
+    text-decoration: none;
+    color: #b6b6b6;
+    border: solid 2px #b6b6b6;
+    border-radius: 3px;
+    transition: .4s;
+}
+
+
+ footer{
+    top: 1vh;
+    width: 100%;
+    background-color: #292929;
+    color: #fff;
+    vertical-align : bottom;
+    bottom: 0;
+}
+
+.allButton {
+    top: 1vh;
+    font-size:14pt;
+    position: relative;
+    display: inline-block;
+    font-weight: bold;
+    padding: 0em 0.5em;
+    text-decoration: none;
+    transition: .4s;
+    vertical-align : center;
+}
+
+.footterButton {
+    color: #4f4f4f;
+    background: #f0f0f0;
+}
+
+.footterButton:hover {
+    background: #525252;
+    color: #e8e8e8;
+}
+
+.joinButton {
+    color: #ebebeb;
+    background: #3d53ff;
+    float: right;
+    right: 2vw;
+}
+.joinButton:active {
+    background: #0a428c;
+}
+.joinButton:hover {
+    text-decoration: none;
+    background: #7398d8;
+    opacity: 0.8;
+}
+
+.homeButton {
+    color: #ebebeb;
+    background: #787d20;
+    transition: .4s;
+    float: right;
+    right: 2.5vw;
+}
+.homeButton:active {
+    background: #8c8c0a;
+}
+.homeButton:hover {
+    text-decoration: none;
+    background: #c2cd4b;
+    opacity: 0.8;
+}
+
+.copyButton {
+    color: #ebebeb;
+    background: #0c692b;
+    float: right;
+    right: 1.5vw;
+}
+.copyButton:active {
+    background: #0d670a;
+}
+.copyButton:hover {
+    text-decoration: none;
+    background: #299c70;
+    opacity: 0.8;
+}
+
+.leaveButton {
+    color: #ebebeb;
+    background: #973d1a;
+    float: right;
+    right: 1vw;
+}
+.leaveButton:active {
+    background: #571209;
+    color: #FFF;
+}
+.leaveButton:hover {
+    text-decoration: none;
+    background: #cc8263;
+    opacity: 0.9;
+}
+
+.voicetext {
+    position: relative;
+    top: 1vh;
+    width: 30vw;
+    font-size:13.5pt;
+    text-align: left;
+    vertical-align: top;
+}
+
+
+@media (max-width: 1366px) {
+    .text_area {
+        font-size: 55px;
+        -webkit-line-clamp: 5;
+    }
+}
+@media (max-height: 700px) {
+    .text_area {
+        font-size: 55px;
+        -webkit-line-clamp: 5;
+    }
+}
+
+
+@media (max-width: 1050px) {
+    .text_area {
+        top: 35%;
+        font-size: 55px;
+        -webkit-line-clamp: 5;
+    }
+}
+@media (max-height: 650px) {
+    .text_area {
+        font-size: 55px;
+        -webkit-line-clamp: 5;
+    }
+}
+
+
+@media (max-width: 900px) {
+    .text_area {
+        top: 25%;
+        font-size: 45px;
+        -webkit-line-clamp: 4;
+    }
+}
+@media (max-height: 300px) {
+    .text_area {
+        font-size: 45px;
+        -webkit-line-clamp: 4;
+    }
+}
